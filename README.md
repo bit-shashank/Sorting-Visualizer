@@ -19,5 +19,5 @@ This project is open to contributions and i will be very happy to entertain your
 -   Run the below command on terminal (_Note: You need to install git to run this command_)
 
 ```
-    git clone https://github.com/:your-github-username/text-to-handwriting
+    git clone https://github.com/:your-github-username/Sorting-Visualizer
 ```
