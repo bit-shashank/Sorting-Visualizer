@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.sidenav {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	background-color: #111;
+	padding: 20px;
+	gap: 10px;
+}
+
+label {
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+}
+
+.main {
+	display: flex;
+	flex: 3;
+	flex-direction: column;
+	padding: 0px 30px;
+	font-size: 28px; /* Increased text to enable scrolling */
+	justify-content: space-between;
+}
+
+.footer {
+	width: 100%;
+	font-size: larger;
+	text-align: center;
+}
+
+button {
+	background-color: #4caf50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}

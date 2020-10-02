@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="styles/styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="sidenav">
+				<label title="Number of elements">Elements</label>
+				<input id="numSlider" type="range" min="10" max="200" value="50" />
+				<label title="Speed of sorting">Speed</label>
+				<input id="speedSlider" type="range" min="0" max="1500" value="250" />
+				<label title="algorithm">Select Algorithm</label>
+				<select name="algo" id="algoSelect">
+					<option value="bubble">Bubble Sort</option>
+					<option value="insertion">Insertion Sort</option>
+					<option value="selection">Selection Sort</option>
+					<option value="quick">Quick Sort</option>
+				</select>
+				<div></div>
+				<div></div>
+				<button id="btnSort" type="button">Sort</button>
+				<button id="randomArr" type="button">Randomize</button>
+			</div>
+
+			<div class="main">
+				<canvas id="canvas"></canvas>
+				<footer class="footer">
+					Made with<span style="color: #e25555">&#9829;</span> by
+					<a href="https://github.com/bit-shashank">Shashank</a>
+				</footer>
+			</div>
+		</div>
+		<script defer type="text/javascript" src="scripts/bubbleSort.js"></script>
+		<script defer type="text/javascript" src="scripts/quickSort.js"></script>
+		<script defer type="text/javascript" src="scripts/insertionSort.js"></script>
+		<script defer type="text/javascript" src="scripts/selectionSort.js"></script>
+		<script defer type="text/javascript" src="scripts/arrayVisual.js"></script>
+		<script defer type="text/javascript" src="scripts/canvas.js"></script>
+	</body>
+</html>
