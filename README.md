@@ -9,6 +9,9 @@ Sorting visualizer is an amazing tool to visualize how sorting algorithms work. 
 -   Insertion Sort
 -   Quick Sort
 
+# See quick sort in action
+![](QuickSort.gif)
+
 # Contribution Guide
 
 This project is open to contributions and i will be very happy to entertain your Pull Requests.
@@ -21,3 +24,4 @@ This project is open to contributions and i will be very happy to entertain your
 ```
     git clone https://github.com/:your-github-username/Sorting-Visualizer
 ```
+-   Alternatively you can just download the zip, unzip it and run it locally.
