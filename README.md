@@ -2,6 +2,10 @@
 
 Sorting visualizer is an amazing tool to visualize how sorting algorithms work. Purely made using HTML5 canvas and Javascript this tool is excellent for visualizing sorting algorithms right inside the browser.
 
+# Play with it
+
+You can right away play with it on https://bit-shashank.github.io/Sorting-Visualizer/
+
 # Algorithms supported
 
 -   Bubble Sort
