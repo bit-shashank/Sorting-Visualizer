@@ -23,3 +23,5 @@ This project is open to contributions and i will be very happy to entertain your
 
 ```
     git clone https://github.com/:your-github-username/Sorting-Visualizer
+```
+-   Alternatively you can just download the zip, unzip it and run it locally.
