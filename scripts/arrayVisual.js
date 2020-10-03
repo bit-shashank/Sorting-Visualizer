@@ -80,6 +80,8 @@ class ArrayVisual {
 			case "quick":
 				quickSort(this);
 				break;
+			case "merge":
+				mergeSort(this);
 		}
 	}
 }
