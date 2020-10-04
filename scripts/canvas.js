@@ -12,7 +12,7 @@ canvas.height = H;
 
 //Default Number of elements in the array
 var N = 50;
-var arrayVisual = new ArrayVisual(ctx, N, 30, 300, Math.floor(W / N), 100);
+var arrayVisual = new ArrayVisual(ctx, N, 30, 300, 250);
 arrayVisual.showArr();
 
 // Setting the event handellers on html elements
@@ -22,7 +22,15 @@ const numSlider = document.getElementById("numSlider");
 const speedSlider = document.getElementById("speedSlider");
 const algoSelector = document.getElementById("algoSelect");
 
-start.addEventListener("click", () => {
+numSlider.addEventListener("input", () => {
+	if (arrayVisual.sorting) return;
+	var arrSize = numSlider.value;
+	arrayVisual.n = arrSize;
+	arrayVisual.arr = arrayVisual.generateRandomArray();
+	arrayVisual.showArr();
+});
+
+speedSlider.addEventListener("change", () => {
 	//setting speed from slider
 	var maxSpeed = parseInt(speedSlider.max);
 	var minSpeed = parseInt(speedSlider.min);
@@ -30,9 +38,15 @@ start.addEventListener("click", () => {
 
 	//Setting the speed of the arrayVisual
 	arrayVisual.speed = speed;
+});
+
+start.addEventListener("click", () => {
+	if (arrayVisual.sorting) return;
+
 	//Setting the algorithm
 	arrayVisual.algorithm = algoSelector.value;
 	//Starting the visualizer
+
 	arrayVisual.start();
 });
 
@@ -40,9 +54,6 @@ start.addEventListener("click", () => {
 generateRan.addEventListener("click", () => {
 	//If already sorting simply return
 	if (arrayVisual.sorting) return;
-
-	var arrSize = numSlider.value;
-	arrayVisual.n = arrSize;
 	arrayVisual.arr = arrayVisual.generateRandomArray();
 	arrayVisual.showArr();
 });

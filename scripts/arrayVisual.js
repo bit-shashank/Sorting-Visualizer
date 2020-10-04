@@ -1,5 +1,5 @@
 class ArrayVisual {
-	constructor(cntx, n, low, high, speed, algorithm) {
+	constructor(cntx, n, low, high, speed) {
 		this.cntx = cntx;
 		this.n = n;
 		this.low = low;
@@ -15,7 +15,7 @@ class ArrayVisual {
 		this.width = W / this.n;
 		this.speed = speed;
 		this.sorting = false;
-		this.algorithm = algorithm;
+		this.algorithm = "bubble";
 	}
 
 	//Generates a random array
@@ -50,7 +50,7 @@ class ArrayVisual {
 
 	//Helped method to visualize the array
 	async showArr() {
-		await this.sleep(this.speed);
+		if (this.sorting) await this.sleep(this.speed);
 		this.cntx.fillStyle = "white";
 		this.cntx.fillRect(0, 0, W, H);
 		this.cntx.beginPath();
@@ -63,9 +63,6 @@ class ArrayVisual {
 	}
 
 	start() {
-		//If already sorting simply return
-		if (this.sorting) return;
-
 		this.sorting = true;
 		switch (this.algorithm) {
 			case "bubble":
