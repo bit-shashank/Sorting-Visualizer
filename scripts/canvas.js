@@ -6,9 +6,10 @@ var W = 800;
 var H = 500;
 var offset = 10;
 
-//Setting the canvas width and height
+//Setting the canvass width and height
 canvas.width = W + offset;
 canvas.height = H;
+
 
 //Default Number of elements in the array
 var N = 50;

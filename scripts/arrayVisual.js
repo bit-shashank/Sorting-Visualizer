@@ -51,7 +51,7 @@ class ArrayVisual {
 	//Helped method to visualize the array
 	async showArr() {
 		if (this.sorting) await this.sleep(this.speed);
-		this.cntx.fillStyle = "white";
+		this.cntx.fillStyle = "black";
 		this.cntx.fillRect(0, 0, W, H);
 		this.cntx.beginPath();
 		for (var i = 0; i < this.n; i++) {

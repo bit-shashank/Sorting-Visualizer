@@ -1,22 +1,50 @@
-body {
-	margin: 0;
-	padding: 0;
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding:0px;
 	font-family: "Lato", sans-serif;
 }
 
 .container {
-	display: flex;
-	height: 100vh;
+	display:flex;
+	flex-direction: row;
+	padding:10px;
+	background: black;
+	height:100%;
+}
+
+#canvas{
+	width:100%;
+	height:100%;
 }
 
 .sidenav {
+	flex:1;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-	background-color: #111;
+	height:auto;
 	padding: 20px;
 	gap: 10px;
+	border :1px solid white;
+	border-radius: 5px;
+	margin:0px 10px 0px 10px;
 }
+
+
+.main {
+	flex:5;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	height:100%;
+	border :1px solid white;
+	border-radius: 5px;
+	margin:0px 10px 0px 10px;
+	overflow-x: scroll;
+}
+
+
 
 label {
 	text-decoration: none;
@@ -24,20 +52,6 @@ label {
 	color: #818181;
 }
 
-.main {
-	display: flex;
-	flex: 3;
-	flex-direction: column;
-	padding: 0px 30px;
-	font-size: 28px; /* Increased text to enable scrolling */
-	justify-content: space-between;
-}
-
-.footer {
-	width: 100%;
-	font-size: larger;
-	text-align: center;
-}
 
 button {
 	background-color: #4caf50; /* Green */
@@ -50,11 +64,22 @@ button {
 	font-size: 16px;
 }
 
-@media screen and (max-height: 450px) {
-	.sidenav {
-		padding-top: 15px;
+@media screen and (max-width: 800px) {
+	.container{
+		flex-direction: column;
 	}
-	.sidenav a {
-		font-size: 18px;
+	.sidenav,.main{
+		margin:0px 10px 10px 10px;
 	}
+	
+}
+
+.disable-scrollbars::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
 }

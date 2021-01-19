@@ -12,7 +12,7 @@ You can right away play with it on https://bit-shashank.github.io/Sorting-Visual
 -   Selection Sort
 -   Insertion Sort
 -   Quick Sort
--   Merge Sort (BETA)
+-   Merge Sort
 
 # See quick sort in action
 
